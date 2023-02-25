@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block titulo %} index {% endblock %}
+
+{%block contenido%} contenido 
+
+<div class="card">
+    <div class="card-header">
+        listar autos
+    </div>
+    <div class="card-body">
+      {%for autos in autos %}
+        <h4 class="card-title"> autos </h4>
+        <table class="table">
+          <thead>   
+            <tr>
+              <th scope="id">id</th>
+              <th scope="titulo">titulo</th>
+              <th scope="imagen">imagen</th>
+              <th scope="descripcion">descripcion</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th>{{autos.id}}</th>
+              <td>{{autos.titulo}}</td>
+
+              <td>
+                <img src=" {{autos.imagen.url}}" height="200"></td>
+              <td>{{autos.descripcion}}</td>
+
+            {% endfor %}
+          </tbody>
+        </table>
+    </div>
+    <div class="card-footer text-muted">
+        mas informacion esta disponible atravez del contacto  
+
+    </div>
+</div>
+
+ {% endblock %}
