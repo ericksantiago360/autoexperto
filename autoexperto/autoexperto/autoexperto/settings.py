@@ -126,6 +126,9 @@ STATIC_URL = "static/"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, '')
 MEDIA_URL = '/imagenes/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'autoexpertoapp/static'),)
+
+
 
 
 

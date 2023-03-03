@@ -6,11 +6,11 @@
 
 <div class="card">
     <div class="card-header">
-        listar autos
-    </div>
+      
+    
     <div class="card-body">
       {%for autos in autos %}
-        <h4 class="card-title"> autos </h4>
+        <h4 class="card-title">  </h4>
         <table class="table">
           <thead>   
             <tr>
@@ -18,18 +18,41 @@
               <th scope="titulo">titulo</th>
               <th scope="imagen">imagen</th>
               <th scope="descripcion">descripcion</th>
-            </tr>
+              <th scope="marcadelauto">marca del auto</th>
+              <th scope="modelo">modelo</th>
+              <th scope="precio">precio</th>
+              <th scope="kilometraje">kilometraje</th>
+              <th scope="estadodelvehiculo">estado del vehiculo</th>
+              <th scope="factura">factura</th>
+              <th scope="numerodedueno">numero de dueño</th>
+              
+              
+              
+              
+
+              <th> acciones </th>
+
+
+              </tr>
           </thead>
 
           <tbody>
             <tr>
               <th>{{autos.id}}</th>
               <td>{{autos.titulo}}</td>
-
-              <td>
-                <img src=" {{autos.imagen.url}}" height="200"></td>
+              <td><img src=" {{autos.imagen.url}} " height="200"> <img src=" {{autos.imagen2.url}}" height="200"> <img src=" {{autos.imagen3.url}}" height="200"> <img src=" {{autos.imagen4.url}}" height="200"> </td>
               <td>{{autos.descripcion}}</td>
+              <td>{{autos.marcadelauto}}</td>
+              <td>{{autos.modelo}}</td>
+              <td>{{autos.precio}}</td>
+              <td>{{autos.kilometraje}}</td>
+              <td>{{autos.estadodelvehiculo}}</td>
+              <td>{{autos.factura}}</td>
+              <td>{{autos.numerodedueno}}</td>
 
+              
+              
+                 
             {% endfor %}
           </tbody>
         </table>

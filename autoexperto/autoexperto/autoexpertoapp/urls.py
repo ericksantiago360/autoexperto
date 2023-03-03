@@ -5,10 +5,11 @@ from django.contrib.staticfiles.urls import static
 
 urlpatterns = [
     path('', views.inicio, name ='inicio'),
-   path('nosotros', views.nosotros, name ='nosotros'),
+    path('nosotros', views.nosotros, name ='nosotros'),
     path('autos', views.autos, name ='autos'),
-    path('crear', views.crear, name ='crear'),
-    path('editar', views.editar, name ='editar'),
+    path('contacto', views.contacto, name ='contacto'),
+    path('autos/crear', views.crear, name = 'crear_auto'),
+    path('editar', views.editar, name ='editar_autos'), 
     path('form', views.autos, name ='form'),
     
     

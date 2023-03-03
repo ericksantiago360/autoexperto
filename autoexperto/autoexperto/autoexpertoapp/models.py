@@ -11,8 +11,10 @@ class datosdelauto(models.Model):
     modelo = models.CharField(max_length=200, verbose_name='modelo', null=True)
     precio = models.CharField(max_length=200, verbose_name='precio',null= True) 
     descripcion = models.TextField( verbose_name= 'Descripcion',null = True)  
-    
-    
+    kilometraje= models.CharField(max_length=200, verbose_name='kilometraje', null=True)
+    estadodelvehiculo = models.CharField(max_length=200, verbose_name='estadodelvehiculo', null=True)
+    factura = models.CharField(max_length=200, verbose_name='factura', null=True)
+    numerodedueno = models.CharField(max_length=200, verbose_name='numerodedueno', null=True)
           
     def delete(self, using=None, keep_parents=False):
         self.imagen.storage.delete(self.imagen.name)
