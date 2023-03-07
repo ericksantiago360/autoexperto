@@ -25,6 +25,3 @@ def editar(request):
 
 def form(request):
     return render(request,'autos/form.html')
-
-
-

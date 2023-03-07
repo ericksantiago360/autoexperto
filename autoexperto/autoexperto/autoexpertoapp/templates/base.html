@@ -9,36 +9,23 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
  
 <nav>
-  <img src='{% static "img/logoautoexpertonoegroblacofonodrojo.jpeg"%}' width="120" alt="logo">
+  <img src='{% static "img/logo3.jpeg"%}' width="100" alt="logo">
   <nav class="nav justify-content-center">
-    <a class="nav-link ac tive" href="{% url 'inicio' %}">inicio</a>
-    <a class="nav-link" href="{% url 'nosotros' %}">nosotros</a>  
-    <a class="nav-link" href="{% url 'autos' %}">autos</a>
-    <a class="nav-link" href="{% url 'contacto' %}">contacto</a>
-    
-    
+    <a class="nav-link ac tive" href="{% url 'inicio' %}">AUTOEXPERTO</a>
+    <a class="nav-link" href="{% url 'nosotros' %}">NUESTROS SERVICIOS</a>  
+    <a class="nav-link" href="{% url 'autos' %}">INVENTARIO DE AUTOS SEMINUEVOS</a>
+    <a class="nav-link" href="{% url 'contacto' %}">CONTACTO</a>  
   </nav>
 </nav>
 <div class="container">
   <div class=row>
     <div class=col-12>
-     {% block contenido %}   contenido   
-    </div>
-  </div>
-</div>
-
-  <div class="card">
-      <div class="card-header">
-        <button type="button" href="{% url 'crear.html' %}" class="btn btn-primary">agregar nuevo auto</button>
-
-
-       </div>
-      <div class="col-12">
-
-      </div>
-
-    
-  </div>
+      <img src='{% static "img/autos.jpeg"%}' width="300" alt="logo">
+      <img src='{% static "img/tunel.jpeg"%}' width="300" alt="logo">
+      <img src='{% static "img/van.jpeg"%}' width="300" alt="logo">
+      <img src='{% static "img/bosque.jpeg"%}' width="300" alt="logo">
+   
+     {% block contenido %}  
 </body>
 </html>
 
