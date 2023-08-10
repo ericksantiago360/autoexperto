@@ -10,7 +10,20 @@ cd autoexperto/
 descargar contenedeor desde dockerhub
 arm64v8/mysql
 
-crear base de datos :
+editar settings como
+DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'autoexperto',
+            'USER': 'root',
+            'PASSWORD': 'admin',
+            'HOST': 'localhost',
+            'PORT': '3306',
+        }
+    }
+crear bse de datos dede 
 CREATE DATABASE autoexperto CHARACTER SET utf8;
 
-4#python3 manage.py runserver
+
+
+4# python3 manage.py runserver
