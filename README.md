@@ -8,9 +8,9 @@ source ./venv/bin/activate
 cd autoexperto/ 
 3# activar el contenedor  docker de base de datos  mysqlserver  autoexperto
 descargar contenedeor desde dockerhub
-
-
 arm64v8/mysql
 
+crear base de datos :
+CREATE DATABASE autoexperto CHARACTER SET utf8;
 
 4#python3 manage.py runserver
